@@ -77,7 +77,7 @@ header > label > img{
     justify-content: center;
     align-items: center;
 }
-header > .acctCreationBox .acctCreation{
+header > .acctCreationBox > .acctCreation > .icon{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -87,6 +87,11 @@ header > .acctCreationBox .acctCreation{
     align-items: center;
     cursor: pointer;
     color: #000;
+    font-size: 2rem;
+    z-index: 1111;
+}
+header > .acctCreationBox > .acctCreation > .icon{
+    z-index: 1111;
 }
 
 /* NAvBar styles */
@@ -130,19 +135,4 @@ nav ul li a{
 }
 .disp{
     display: flex;
-}
-
-@media screen and (max-width: 425px) {
-    header label, header .searchBoxes,  header .acctCreationBox{
-        width: 30%;
-    }
-    .search-box {
-        display: none;
-    }
-    .responsiveSearch{
-       
-        display: flex;
-        
-    }
-
 }
