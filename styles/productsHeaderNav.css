@@ -24,7 +24,7 @@ header > label > img{
     height: 100%
 }
 
-.search-box, .responsiveSearch {
+.search-box, .responsiveSearch, .searchBox{
     display: flex;
     align-items: center;
     background: #fff;
@@ -32,7 +32,9 @@ header > label > img{
     border-radius: 20px;
     width: 250px;
 }
-
+.searchBox{
+    width: 100%;
+}
 .search-box input, .input input{
     border: none;
     outline: none;
@@ -44,26 +46,36 @@ header > label > img{
     /* display: none; */
     /* width: 100%;
     height: 100%; */
-    background: #fff;
+    /* width: 90%; */
+    padding: 8px;
+    /* background: #fff; */
     /* z-index: 1111; */
+}
+.search-box.icon{
+    color: #000;
+    background-color: #ff0000;
 }
 .input{
     display: none;
     align-items: center;
-    background: #fff;
     padding: 8px 15px;
     /* border-radius: 20px; */
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1111;
+    /* z-index: 111; */
     background-color: #4d1831;
     left: 0;
     top: 0;
 }
-.search-box i, .responsiveSearch i{
+.search-box i, .responsiveSearch i, .input i{
     color: #555;
     cursor: pointer;
+}
+.searchBox .fa-search{
+    display: flex;
+    color: #000;
+    z-index: 999999999;
 }
 .responsiveSearch{
     width: 70px;
